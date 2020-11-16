@@ -4,3 +4,63 @@
 .Home{
   margin-top: 2rem;
 }
+
+h1 { 
+  color: #11cfdd; 
+  font-family: italic;
+  font-size: 3rem;
+  font-weight: 400;  
+  text-align: center;
+     
+}
+.backgroundHome{
+  margin: 5rem auto;
+  width: 30%;
+  height: 30%;
+}
+/*Navbar*/
+#navigationBar{
+  background-image: linear-gradient(to top left,#cbbefa, #f587d9, #696bf0);  
+  font-size: 1.2rem;
+  font-weight: 500;
+
+}
+#logoImg{
+  max-width: 4rem;
+  max-height: 4rem;
+}
+#title{
+  color: #63dfca;
+  font-family: "Roboto Slab";
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-shadow: 0.1rem 0.1rem 0.1rem #0b074d;
+}
+
+@media screen and (max-width: 550px)  {
+
+  /*Navbar*/
+#navigationBar{
+  background-image: linear-gradient(to top right,#faecbe, #f587d9, #696bf0); 
+  font-size: 1rem;
+  font-weight: 500;
+
+}
+  #logoImg{
+    max-width: 2rem;
+    max-height: 2rem;
+  }
+  #title{
+    color: #63dfca;
+    font-family: "Roboto Slab";
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-shadow: 0.1rem 0.1rem 0.1rem #0b074d;
+  }
+
+  .backgroundHome{
+    margin: 2rem auto;
+    width: 70%;
+    height: 70%;
+  }
+}
