@@ -1,35 +1,70 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react';
+
+const defaultColors = {
+	one: '#858585',
+	two: '#858585',
+	three: '#858585',
+	four: '#858585',
+	five: '#858585',
+	six: '#858585',
+	seven: '#858585',
+	eight: '#858585',
+	nine: '#858585',
+	ten: '#858585',
+};
 
 function Help() {
-    const [color, setColor] = useState('#858585');
-   
-    const [isGrey, setIsGrey] = useState(true);
-   
-    
+	const [selectionColor, setSelectionColor] = useState({
+		...defaultColors,
+		one: '#37E445',
+	});
+	const [currentNumber, setCurrentNumber] = useState('1');
 
-    const handleOne = (e) => {
-      setIsGrey(!isGrey);
-      setColor(isGrey ? '#37ECAB': '#858585');
-    }
-    const handleTwo = (e) => {
-        setIsGrey(!isGrey);
-        setColor(isGrey ? '#37E445': '#858585');
-      }
-    return (
-    <div>
-    <h4 value={isGrey} onClick={handleOne} className="one">1<div style={{ background:color}}  className="squareOne"></div></h4>
-    <h4 value={isGrey} onClick={handleTwo} className="two">2<div style={{ background:color}} className="squareTwo"></div><div style={{ background:color}} className="squareTwo2"></div></h4>
-    
-    
- 
-  
-</div>
-    )
+	const handleOne = () => {
+		if (selectionColor.one === '#858585') {
+			let updatedSelection = { ...defaultColors, one: '#37E445' };
+			setSelectionColor(updatedSelection);
+			setCurrentNumber('1');
+		}
+	};
+
+	const handleTwo = (e) => {
+		if (selectionColor.two === '#858585') {
+			let updatedSelection = {
+				...defaultColors,
+				two: '#37EBA5',
+			};
+			setSelectionColor(updatedSelection);
+			setCurrentNumber('2');
+		}
+	};
+
+	return (
+		<div>
+			<h4 onClick={handleOne} className='one'>
+				1
+				<div
+					style={{ background: selectionColor.one }}
+					className='squareOne'
+				></div>
+			</h4>
+			<h4 onClick={handleTwo} className='two'>
+				2
+				<div
+					style={{ background: selectionColor.two }}
+					className='squareTwo'
+				></div>
+				<div
+					style={{ background: selectionColor.two }}
+					className='squareTwo2'
+				></div>
+			</h4>
+
+			<div>
+				<h2>{currentNumber}</h2>
+			</div>
+		</div>
+	);
 }
 
-export default Help
-
-//className="switch-container_text"
-//<div style={{ color:textColor}} >advanced view</div>
-//value={isGrey}
-//
+export default Help;
