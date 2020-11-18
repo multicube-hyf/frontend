@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import './pyramid.css' 
 
-import Line from './Line';
+import Line from '../Line';
 
 function Pyramid() {
 	const [isHighlighted, setIsHighlighted] = useState({ one: true });
@@ -13,7 +14,7 @@ function Pyramid() {
 
         // If the div is not highlighted, set it to true and the rest to false
 		if (!isHighlighted[number]) {
-			updatedHighlight = { [number]: !isHighlighted[number] };
+			updatedHighlight = { [number]: true };
 		} else {
             // If the div is already highlighted, don't update anything
 			updatedHighlight = { ...isHighlighted };
@@ -29,7 +30,7 @@ function Pyramid() {
 				onClick={toggleSelect}
 				className='pyramid-line'
 			>
-				<h4>1</h4>
+				<h4 className='h4-line'>1</h4>
 				<Line
 					number='1'
 					highlightColor='#37ECAB'
@@ -37,7 +38,7 @@ function Pyramid() {
 				/>
 			</div>
 			<div data-divnum='two' onClick={toggleSelect} className='pyramid-line'>
-				<h4>2</h4>
+				<h4 className='h4-line'>2</h4>
 				<Line
 					number='2'
 					highlightColor='#FCBFE3'
@@ -45,7 +46,7 @@ function Pyramid() {
 				/>
 			</div>
 			<div data-divnum='three' onClick={toggleSelect} className='pyramid-line'>
-				<h4>3</h4>
+				<h4 className='h4-line'>3</h4>
 				<Line
 					number='3'
 					highlightColor='#FFCF55'
@@ -53,7 +54,7 @@ function Pyramid() {
 				/>
 			</div>
 			<div data-divnum='four' onClick={toggleSelect} className='pyramid-line'>
-				<h4>4</h4>
+				<h4 className='h4-line'>4</h4>
 				<Line
 					number='4'
 					highlightColor='#61ff47'
@@ -61,7 +62,7 @@ function Pyramid() {
 				/>
 			</div>
 			<div data-divnum='five' onClick={toggleSelect} className='pyramid-line'>
-				<h4>5</h4>
+				<h4 className='h4-line'>5</h4>
 				<Line
 					number='5'
 					highlightColor='#3918ff'
@@ -69,7 +70,7 @@ function Pyramid() {
 				/>
 			</div>
 			<div data-divnum='six' onClick={toggleSelect} className='pyramid-line'>
-				<h4>6</h4>
+				<h4 className='h4-line'>6</h4>
 				<Line
 					number='6'
 					highlightColor='#f89705'
@@ -77,7 +78,7 @@ function Pyramid() {
 				/>
 			</div>
 			<div data-divnum='seven' onClick={toggleSelect} className='pyramid-line'>
-				<h4>7</h4>
+				<h4 className='h4-line'>7</h4>
 				<Line
 					number='7'
 					highlightColor='#849fe5'
@@ -85,7 +86,7 @@ function Pyramid() {
 				/>
 			</div>
 			<div data-divnum='eight' onClick={toggleSelect} className='pyramid-line'>
-				<h4>8</h4>
+				<h4 className='h4-line'>8</h4>
 				<Line
 					number='8'
 					highlightColor='#f21212'
@@ -93,7 +94,7 @@ function Pyramid() {
 				/>
 			</div>
 			<div data-divnum='nine' onClick={toggleSelect} className='pyramid-line'>
-				<h4>9</h4>
+				<h4 className='h4-line'>9</h4>
 				<Line
 					number='9'
 					highlightColor='#31e1d7'
@@ -101,7 +102,7 @@ function Pyramid() {
 				/>
 			</div>
 			<div data-divnum='ten' onClick={toggleSelect} className='pyramid-line'>
-				<h4>10</h4>
+				<h4 className='h4-line'>10</h4>
 				<Line
 					number='10'
 					highlightColor='#dc2cb5'

@@ -1,10 +1,11 @@
 import React from 'react';
+import './cube.css'
 
 function Cube({backgroundColor}) {
 	return (
 		<div
-			className='cube'
-			style={{ background: backgroundColor, width: '2rem', height: '2rem' }}
+			id='cube'
+			style={{ background: backgroundColor }}
 		></div>
 	);
 }

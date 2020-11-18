@@ -1,5 +1,5 @@
 import React from 'react';
-import Pyramid from '../components/Pyramid';
+import Pyramid from '../components/pyramid/Pyramid';
 
 function Help() {
 
