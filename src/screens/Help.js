@@ -9,7 +9,7 @@ function Help() {
 	return (
 		<div>
 			<Pyramid setSelectedNumber={setSelectedNumber} />
-			<h3>{selectedNumber}</h3>
+			<h3 className="selected">{selectedNumber}</h3>
 			<Rectangle selectedNumber={selectedNumber} />
 		</div>
 	);
