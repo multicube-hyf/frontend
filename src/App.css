@@ -357,9 +357,9 @@ canvas {
 }
 .tenAs1 {
 	display: grid;
-	grid-template-columns: 1rem 1rem 1rem 1rem 1rem 1rem;
+	grid-template-columns: 1rem 1rem 1rem 1rem 1rem;
 	grid-gap: 1rem;
-	margin: 4rem 0rem 0rem 2rem;
+	margin: 4rem 0rem 0rem 6rem;
 	color: #553d30;
 }
 .oneTen {
@@ -373,31 +373,31 @@ canvas {
 	background: #dc2cb5;
 	width: 2rem;
 	height: 2rem;
-	margin-right: 1rem;
+	margin-left: 2rem;
 }
 .squareTen2As1 {
 	background: #dc2cb5;
 	width: 2rem;
 	height: 2rem;
-	margin-left: 1rem;
+	margin-left: 3rem;
 }
 .squareTen3As1 {
 	background: #dc2cb5;
 	width: 2rem;
 	height: 2rem;
-	margin-left: 2rem;
+	margin-left: 4rem;
 }
 .squareTen4As1 {
 	background: #dc2cb5;
 	width: 2rem;
 	height: 2rem;
-	margin-left: 3rem;
+	margin-left: 5rem;
 }
 .squareTen5As1 {
 	background: #dc2cb5;
 	width: 2rem;
 	height: 2rem;
-	margin-left: 4rem;
+	margin-left: 6rem;
 }
 .squareTen6As1 {
 	background: #dc2cb5;
@@ -440,7 +440,9 @@ canvas {
 	margin: 2rem;
 	padding: 1rem;
 }
-
+.Current{
+	margin-left: 15rem;
+}
 
 /*Help screen*/
 
@@ -964,8 +966,8 @@ b {
 	}
 	.tenAs1 {
 		display: grid;
-		grid-template-columns: 1rem 1rem 1rem 1rem 1rem 1rem;
-		margin: 3rem 0rem 0rem 0.2rem;
+		grid-template-columns: 1rem 1rem 1rem 1rem 1rem ;
+		margin: 1rem 0rem 0rem 0.2rem;
 		grid-gap: 0.2rem;
 		color: #553d30;
 		font-size: 1rem;
@@ -979,30 +981,31 @@ b {
 		background: #dc2cb5;
 		width: 1rem;
 		height: 1rem;
+		margin-left: 1.2rem;
 	}
 	.squareTen2As1 {
 		background: #dc2cb5;
 		width: 1rem;
 		height: 1rem;
-		margin-left: 0.2rem;
+		margin-left: 1.4rem;
 	}
 	.squareTen3As1 {
 		background: #dc2cb5;
 		width: 1rem;
 		height: 1rem;
-		margin-left: 0.4rem;
+		margin-left: 1.6rem;
 	}
 	.squareTen4As1 {
 		background: #dc2cb5;
 		width: 1rem;
 		height: 1rem;
-		margin-left: 0.6rem;
+		margin-left: 1.8rem;
 	}
 	.squareTen5As1 {
 		background: #dc2cb5;
 		width: 1rem;
 		height: 1rem;
-		margin-left: 0.8rem;
+		margin-left: 2rem;
 	}
 	.squareTen6As1 {
 		background: #dc2cb5;
@@ -1043,5 +1046,9 @@ b {
 	.numbers {
 		margin: 1rem 0rem 0rem 0rem;
 		padding: 0.2rem;
+	}
+	.Current{
+
+		margin: 3rem 0rem 0rem 4rem;
 	}
 }
