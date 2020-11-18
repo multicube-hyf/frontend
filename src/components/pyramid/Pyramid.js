@@ -67,7 +67,7 @@ function Pyramid({setSelectedNumber}) {
 					isHighlighted={isHighlighted.four}
 				/>
 			</div>
-			<div data-divnum='five' onClick={toggleSelect} className='pyramid-line'>
+			<div data-number='5' data-divnum='five' onClick={toggleSelect} className='pyramid-line'>
 				<h4 className='h4-line'>5</h4>
 				<Line
 					number='5'
@@ -75,7 +75,7 @@ function Pyramid({setSelectedNumber}) {
 					isHighlighted={isHighlighted.five}
 				/>
 			</div>
-			<div data-divnum='six' onClick={toggleSelect} className='pyramid-line'>
+			<div data-number='6' data-divnum='six' onClick={toggleSelect} className='pyramid-line'>
 				<h4 className='h4-line'>6</h4>
 				<Line
 					number='6'
@@ -83,7 +83,7 @@ function Pyramid({setSelectedNumber}) {
 					isHighlighted={isHighlighted.six}
 				/>
 			</div>
-			<div data-divnum='seven' onClick={toggleSelect} className='pyramid-line'>
+			<div data-number='7' data-divnum='seven' onClick={toggleSelect} className='pyramid-line'>
 				<h4 className='h4-line'>7</h4>
 				<Line
 					number='7'
@@ -91,7 +91,7 @@ function Pyramid({setSelectedNumber}) {
 					isHighlighted={isHighlighted.seven}
 				/>
 			</div>
-			<div data-divnum='eight' onClick={toggleSelect} className='pyramid-line'>
+			<div data-number='8' data-divnum='eight' onClick={toggleSelect} className='pyramid-line'>
 				<h4 className='h4-line'>8</h4>
 				<Line
 					number='8'
@@ -99,7 +99,7 @@ function Pyramid({setSelectedNumber}) {
 					isHighlighted={isHighlighted.eight}
 				/>
 			</div>
-			<div data-divnum='nine' onClick={toggleSelect} className='pyramid-line'>
+			<div data-number='9' data-divnum='nine' onClick={toggleSelect} className='pyramid-line'>
 				<h4 className='h4-line'>9</h4>
 				<Line
 					number='9'
@@ -107,7 +107,7 @@ function Pyramid({setSelectedNumber}) {
 					isHighlighted={isHighlighted.nine}
 				/>
 			</div>
-			<div data-divnum='ten' onClick={toggleSelect} className='pyramid-line'>
+			<div data-number='10' data-divnum='ten' onClick={toggleSelect} className='pyramid-line'>
 				<h4 className='h4-line'>10</h4>
 				<Line
 					number='10'
