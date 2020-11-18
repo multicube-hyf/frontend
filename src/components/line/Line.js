@@ -1,5 +1,6 @@
 import React from 'react';
-import Cube from './cube/Cube';
+import Cube from '../cube/Cube';
+import './line.css'
 
 Line.defaultProps = {
 	isHighlighted: false,

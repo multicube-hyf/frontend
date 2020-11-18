@@ -1,31 +1,37 @@
 import React, { useState } from 'react';
 import './pyramid.css' 
 
-import Line from '../Line';
+import Line from '../line/Line';
 
-function Pyramid() {
+function Pyramid({setSelectedNumber}) {
 	const [isHighlighted, setIsHighlighted] = useState({ one: true });
+
 
 	const toggleSelect = (e) => {
         // Find the div number to target
-		let number = e.currentTarget.dataset.divnum;
+		let numstring = e.currentTarget.dataset.divnum;
+		 // Find selected number 
+		let numnum = parseInt(e.currentTarget.dataset.number)
+		console.log(numnum)
 
 		let updatedHighlight = {};
 
         // If the div is not highlighted, set it to true and the rest to false
-		if (!isHighlighted[number]) {
-			updatedHighlight = { [number]: true };
+		if (!isHighlighted[numstring]) {
+			updatedHighlight = { [numstring]: true };
 		} else {
             // If the div is already highlighted, don't update anything
 			updatedHighlight = { ...isHighlighted };
 		}
 
 		setIsHighlighted(updatedHighlight);
+		setSelectedNumber(numnum)
 	};
 
 	return (
 		<div>
 			<div
+			    data-number='1'
 				data-divnum='one'
 				onClick={toggleSelect}
 				className='pyramid-line'
@@ -37,7 +43,7 @@ function Pyramid() {
 					isHighlighted={isHighlighted.one}
 				/>
 			</div>
-			<div data-divnum='two' onClick={toggleSelect} className='pyramid-line'>
+			<div  data-number='2' data-divnum='two' onClick={toggleSelect} className='pyramid-line'>
 				<h4 className='h4-line'>2</h4>
 				<Line
 					number='2'
@@ -45,7 +51,7 @@ function Pyramid() {
 					isHighlighted={isHighlighted.two}
 				/>
 			</div>
-			<div data-divnum='three' onClick={toggleSelect} className='pyramid-line'>
+			<div  data-number='3' data-divnum='three' onClick={toggleSelect} className='pyramid-line'>
 				<h4 className='h4-line'>3</h4>
 				<Line
 					number='3'
@@ -53,7 +59,7 @@ function Pyramid() {
 					isHighlighted={isHighlighted.three}
 				/>
 			</div>
-			<div data-divnum='four' onClick={toggleSelect} className='pyramid-line'>
+			<div  data-number='4' data-divnum='four' onClick={toggleSelect} className='pyramid-line'>
 				<h4 className='h4-line'>4</h4>
 				<Line
 					number='4'

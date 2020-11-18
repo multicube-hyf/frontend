@@ -1,0 +1,15 @@
+.rectangle {
+    display: grid;
+    grid-template-columns: repeat(5, 2rem [col-start]);
+    row-gap: 1rem;
+    column-gap: 1rem;
+  }
+  
+  @media screen and (max-width: 550px) {
+    .rectangle {
+      display: grid;
+      grid-template-columns: repeat(5, 0.7rem [col-start]);
+      row-gap: 0.5rem;
+      column-gap: 0.5rem;
+    }
+  }
