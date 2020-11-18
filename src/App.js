@@ -9,6 +9,7 @@ import Register from './screens/Register';
 import SignIn from './screens/SignIn';
 import Profile from './screens/Profile';
 import Help from './screens/Help';
+import LearnNumbers1to10 from './screens/LearnNumbers1to10';
 
 function App() {
 	const [userData, setUserData] = React.useState({
@@ -26,6 +27,7 @@ function App() {
 						<Route exact path='/signin' component={SignIn} />
 						<Route exact path='/register' component={Register} />
 						<Route exact path='/profile' component={Profile} />
+						<Route exact path='/numbers1to10' component={LearnNumbers1to10} />
 					</Switch>
 				</AuthContext.Provider>
 			</BrowserRouter>
