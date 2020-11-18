@@ -1,35 +1,30 @@
 import React from 'react';
+
 import Cube from '../cube/Cube';
+
 import './rectangle.css';
+import { colors } from '../../helpers/colorMap';
 
 Rectangle.defaultProps = {
 	number: 10,
-	isHighlighted: false,
 };
 
-function Rectangle({ number, selectedNumber, highlightColor, isHighlighted }) {
+function Rectangle({ number, selectedNumber }) {
 	// Generate arrays with a list of numbers
-	
 	// Highlighted numbers
 	let highlightedNumbers = [...Array(selectedNumber).keys()];
-	
+
 	// Regular numbers
-	const remainingNumbers = number - selectedNumber
+	const remainingNumbers = number - selectedNumber;
 	let regularNumbers = [...Array(remainingNumbers).keys()];
 
 	return (
 		<div className='rectangle'>
 			{highlightedNumbers.map((number) => (
-				<Cube
-					key={number}
-					backgroundColor={isHighlighted ? highlightColor : '#000000'}
-				/>
+				<Cube key={number} backgroundColor={colors[selectedNumber]} />
 			))}
 			{regularNumbers.map((number) => (
-				<Cube
-					key={number}
-					backgroundColor={isHighlighted ? highlightColor : '#858585'}
-				/>
+				<Cube key={number} backgroundColor={'#858585'} />
 			))}
 		</div>
 	);
