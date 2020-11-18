@@ -1,7 +1,11 @@
 import React from 'react';
 import Cube from './Cube';
 
-function Line({ number, backgroundColor }) {
+Line.defaultProps = {
+	isHighlighted: false,
+};
+
+function Line({ number, highlightColor, isHighlighted }) {
 	// Generate an array with a list of number from 1 to number
 	const numbers = [...Array(parseInt(number)).keys()];
 
@@ -9,12 +13,15 @@ function Line({ number, backgroundColor }) {
 		<div
 			style={{
 				display: 'grid',
-				gridTemplateColumns: 'repeat(10, 1.7rem [col-start])',
+				gridTemplateColumns: 'repeat(10, 2rem [col-start])',
 				columnGap: '1rem',
 			}}
 		>
 			{numbers.map((number) => (
-				<Cube key={number} backgroundColor={backgroundColor} />
+				<Cube
+					key={number}
+					backgroundColor={isHighlighted ? highlightColor : '#858585'}
+				/>
 			))}
 		</div>
 	);
