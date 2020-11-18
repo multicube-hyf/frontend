@@ -1,10 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Home from './screens/Home';
 import AuthContext from './auth/AuthContext';
-import Header from './layout/Header';
+import Header from './components/Header';
 import Register from './screens/Register';
 import SignIn from './screens/SignIn';
 import Profile from './screens/Profile';
