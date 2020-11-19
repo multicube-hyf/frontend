@@ -1,5 +1,4 @@
 import React from "react";
-
 import Cube from "../cube/Cube";
 
 import "./rectangle.css";
@@ -7,6 +6,7 @@ import { colors } from "../../helpers/colorMap";
 
 Rectangle.defaultProps = {
   number: 10,
+  selectedNumber: 0
 };
 
 function Rectangle({ number, selectedNumber }) {

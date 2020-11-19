@@ -6,7 +6,7 @@ import Pyramid from '../components/pyramid/Pyramid'
 function LearnNumbers() {
     return (
         <div>
-           <Pyramid/> 
+        <Pyramid/> 
         </div>
     )
 }
