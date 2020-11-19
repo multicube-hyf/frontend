@@ -1,29 +1,55 @@
-import React from "react";
-import Cube from "../cube/Cube";
+import React, { useState } from 'react';
+import Cube from '../cube/Cube';
 
-import "./matrix.css";
-import { colors } from "../../helpers/colorMap";
+import './matrix.css';
 
 Matrix.defaultProps = {
-  number: 10,
-  selectedNumber: 0
+	number: 10,
+	selectedNumber: 0,
 };
 
-function Matrix({ number, selectedNumber }) {
-  // Generate arrays with a list of numbers
-  // Highlighted numbers
-  let cubeNumbers = [...Array(10).keys()];
+function Matrix({ selectedNumber, setSelectedNumber }) {
+	const [selectedCubes, setSelectedCubes] = useState({});
 
-  
-  
-  return (
-    <div className="matrix">
-      {cubeNumbers.map((number) => (
-        <Cube key={number} backgroundColor={'#c3c3c3'} />
-      ))}
-  
-    </div>
-  );
+	// Generate arrays with a list of numbers
+	// Highlighted numbers
+	let cubeNumbers = [...Array(10).keys()];
+
+	let toggleSelect = (e) => {
+		let cubeId = e.target.id;
+
+		// Update the list of selected cubes
+		let updateSelected = {
+			...selectedCubes,
+			[cubeId]: !selectedCubes[cubeId],
+		};
+		setSelectedCubes(updateSelected);
+
+		// Update the selected cubes number
+		let updatedNumber = selectedNumber;
+
+		if (!selectedCubes[cubeId]) {
+			updatedNumber++;
+		} else {
+			updatedNumber--;
+		}
+
+		setSelectedNumber(updatedNumber);
+	};
+
+	return (
+		<div className='matrix'>
+			{cubeNumbers.map((number) => (
+				<Cube
+					key={number}
+					id={number}
+					backgroundColor={'#c3c3c3'}
+					toggleSelect={toggleSelect}
+					selected={selectedCubes[number]}
+				/>
+			))}
+		</div>
+	);
 }
 
 export default Matrix;

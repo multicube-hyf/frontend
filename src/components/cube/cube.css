@@ -1,16 +1,16 @@
-#cube {
+.cube {
   width: 2rem;
   height: 2rem;
 }
 @media screen and (max-width: 550px) {
-  #cube {
+  .cube {
     width: 1.5rem;
     height: 1.5rem;
   }
 }
 
 @media screen and (max-width: 350px) {
-  #cube {
+  .cube {
     width: 1rem;
     height: 1rem;
   }

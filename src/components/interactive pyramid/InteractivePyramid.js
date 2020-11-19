@@ -12,7 +12,6 @@ function InteractivePyramid({ setSelectedNumber }) {
     let numstring = e.currentTarget.dataset.divnum;
     // Find selected number
     let numnum = parseInt(e.currentTarget.dataset.number);
-    console.log(numnum);
 
     let updatedHighlight = {};
 

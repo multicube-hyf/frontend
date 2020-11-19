@@ -1,15 +1,13 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react';
 //import Rectangle from '../components/rectangle/Rectangle';
-import SelectExercise from '../components/selectExercise/SelectExercise';
+import SelectNumbers from '../components/selectNumbers/SelectNumbers';
 
 function Exercise1() {
-    const [selectedNumber, setSelectedNumber] = useState(3);
-    
-    return (
-        <div>
-        <SelectExercise numToFind={5} selectedNumber={selectedNumber} />
-        </div>
-    )
+	return (
+		<div>
+			<SelectNumbers numToFind={5} />
+		</div>
+	);
 }
 
-export default Exercise1
+export default Exercise1;
