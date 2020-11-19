@@ -4,7 +4,7 @@ import "./interactivePyramid.css";
 import Line from "../line/Line";
 import { colors } from "../../helpers/colorMap";
 
-function Pyramid({ setSelectedNumber }) {
+function InteractivePyramid({ setSelectedNumber }) {
   const [isHighlighted, setIsHighlighted] = useState({ one: true });
 
   const toggleSelect = (e) => {
@@ -164,4 +164,4 @@ function Pyramid({ setSelectedNumber }) {
   );
 }
 
-export default Pyramid;
+export default InteractivePyramid;

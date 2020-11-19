@@ -159,6 +159,14 @@ b {
 .selected{
   font-size: 1.5rem;
   font-weight: 600;
-  margin-left: 7rem;
+  margin-left: 9rem;
 }
+}
+@media screen and (max-width: 330px) {
+  /*Help screen*/
+  .selected{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 7rem;
+  }
 }

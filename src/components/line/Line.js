@@ -1,27 +1,25 @@
-import React from 'react';
-import Cube from '../cube/Cube';
-import './line.css'
+import React from "react";
+import Cube from "../cube/Cube";
+import "./line.css";
 
 Line.defaultProps = {
-	isHighlighted: false,
+  isHighlighted: false,
 };
 
 function Line({ number, highlightColor, isHighlighted }) {
-	// Generate an array with a list of number from 1 to number
-	const numbers = [...Array(parseInt(number)).keys()];
+  // Generate an array with a list of number from 1 to number
+  const numbers = [...Array(parseInt(number)).keys()];
 
-	return (
-		<div 
-		   className="line"
-		>
-			{numbers.map((number) => (
-				<Cube
-					key={number}
-					backgroundColor={isHighlighted ? highlightColor : '#858585'}
-				/>
-			))}
-		</div>
-	);
+  return (
+    <div className="line">
+      {numbers.map((number) => (
+        <Cube
+          key={number}
+          backgroundColor={isHighlighted ? highlightColor : "#858585"}
+        />
+      ))}
+    </div>
+  );
 }
 
 export default Line;
