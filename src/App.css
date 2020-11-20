@@ -99,6 +99,11 @@ b {
   text-align: center;
   padding: 1rem;
 }
+/*Footer*/
+.footer{
+  display: flex;
+  justify-content: space-around;
+}
 
 @media screen and (max-width: 550px) {
   /*Navbar*/
@@ -118,6 +123,11 @@ b {
     font-weight: 700;
     text-shadow: 0.1rem 0.1rem 0.1rem #0b074d;
   }
+  /*Footer*/
+.footer{
+  display: flex;
+  justify-content: space-around;
+}
   /*Home page*/
   .backgroundHome {
     margin: 2rem auto;
