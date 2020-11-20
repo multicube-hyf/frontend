@@ -1,16 +1,14 @@
-import React from "react";
-import "./star.css";
+import React from 'react';
+import './star.css';
 
 function Star() {
-  return (
-    <div className="start-position">
-      <div id="star">
-        <div id="before"></div>
+	return (
+		<div id='star'>
+			<div id='before'></div>
 
-        <div id="after"></div>
-      </div>
-    </div>
-  );
+			<div id='after'></div>
+		</div>
+	);
 }
 
 export default Star;
