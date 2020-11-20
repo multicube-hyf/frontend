@@ -19,7 +19,7 @@ function SelectNumbers({ numToFind }) {
 			{numToFind === selectedNumber && (
 				<div>
 					<div className='start-position'>
-						<Star />
+						<Star width={76} height={72} isHighlighted={true} />
 					</div>
 
 					<p className='star-number'>{numToFind}</p>

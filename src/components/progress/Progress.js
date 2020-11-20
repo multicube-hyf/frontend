@@ -12,10 +12,10 @@ function Progress({ stepsNumber, completedStepsCount }) {
 	return (
 		<div>
 			{completedSteps.map((starNum) => (
-				<Star key={starNum} />
+				<Star key={starNum} isHighlighted={true} />
 			))}
 			{remainingSteps.map((starNum) => (
-				<Star key={starNum} />
+				<Star key={starNum} isHighlighted={false} />
 			))}
 		</div>
 	);
