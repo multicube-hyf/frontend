@@ -1,8 +1,8 @@
 import React from 'react';
 
 Star.defaultProps = {
-	width: 38,
-	height: 36,
+	width: 28,
+	height: 26,
 	isHighlighted: false,
 };
 

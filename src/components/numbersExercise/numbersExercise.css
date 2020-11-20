@@ -1,13 +1,14 @@
 .row-line {
 	display: grid;
-	grid-template-rows: (4, 1rem [row-start]);
-	row-gap: 2rem;
+	grid-template-rows: (5, 1rem [row-start]);
+	row-gap: 1rem;
 }
 
 .num2find {
+	position: relative;
 	text-align: center;
-	margin: 1rem;
-	padding: 1rem;
+	margin-top: 1.5rem;
+	padding-top: 1rem;
 	font-size: 7rem;
 	font-weight: 600;
 }
@@ -19,14 +20,16 @@
 	left: 0;
 	right: 0;
 	text-align: center;
-	margin-top: -2rem;
+	margin-top: -3.3rem;
 	font-size: 1.5rem;
 	color: red;
 	font-weight: 700;
 }
 
 .star-position {
-	margin: 25rem;
+	margin-top: 1.5rem;
+    text-align: center;
+	
 }
 
 .super {
@@ -34,26 +37,25 @@
 	margin: 0 auto;
 	text-align: center;
 	color: red;
-	padding: 2rem;
+	padding: 1rem;
 	font-size: 1.5rem;
 	font-weight: 700;
 }
 
 @media screen and (max-width: 550px) {
 	.star-position {
-		margin: 13rem;
+		margin-top: 1rem;
 	}
 	.row-line {
 		display: grid;
-		grid-template-rows: (4, 1rem [row-start]);
-		row-gap: 1.5rem;
+		grid-template-rows: (5, 0.5rem [row-start]);
+		row-gap: 0rem;
 	}
 	.num2find {
-		text-align: center;
-		margin: 1rem;
-		padding: 1rem;
-		font-size: 5rem;
-		font-weight: 700;
+	position: relative;
+	text-align: center;
+	margin-top: 1.5rem;
+	font-size: 5rem;
 	}
 	.super {
 		position: relative;
@@ -66,17 +68,11 @@
 }
 
 @media screen and (max-width: 350px) {
-	.row-line {
-		display: grid;
-		grid-template-rows: (4, 1rem [row-start]);
-		row-gap: 1rem;
-	}
 	.num2find {
-		text-align: center;
-		margin: 0.5rem;
-		padding: 0.5rem;
-		font-size: 4rem;
-		font-weight: 600;
+	position: relative;
+	text-align: center;
+	padding-top:2rem;
+	font-size: 3rem;
 	}
 	.super {
 		position: relative;

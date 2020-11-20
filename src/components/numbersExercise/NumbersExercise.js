@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 //import StarBorderIcon from '@material-ui/icons/StarBorder';
 import React, { useState, useEffect } from 'react';
 import Matrix from '../matrix/Matrix';
@@ -14,7 +15,7 @@ function NumbersExercise({
 	const [isCompleted, setIsCompleted] = useState(false);
 
 	useEffect(() => {
-		// Track the completition status of the current exercise
+		// Track the completion status of the current exercise
 		if (selectedCubes === numToFind) {
 			setIsCompleted(true);
 		} else {
@@ -45,7 +46,7 @@ function NumbersExercise({
 			/>
 			{isCompleted && (
 				<div>
-					<div className='start-position'>
+					<div className='star-position' >
 						<Star width={76} height={72} isHighlighted={true} />
 					</div>
 
