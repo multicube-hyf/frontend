@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import Matrix from '../matrix/Matrix';
 import Star from '../star/Star';
 
-import './select.css';
+import './numbersExercise.css';
 
-function SelectNumbers({ numToFind }) {
+function NumbersExercise({ numToFind }) {
 	const [selectedNumber, setSelectedNumber] = useState(0);
 
 	return (
@@ -30,4 +30,4 @@ function SelectNumbers({ numToFind }) {
 	);
 }
 
-export default SelectNumbers;
+export default NumbersExercise;
