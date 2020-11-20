@@ -24,7 +24,7 @@ h1 {
 
 /*Navbar*/
 #navigationBar {
-  background-image: linear-gradient(to top left, #cbbefa, #f587d9, #696bf0);
+  /* background-image: linear-gradient(to top left, #cbbefa, #f587d9, #696bf0); */
   font-size: 1rem;
   font-weight: 500;
 }
@@ -103,7 +103,7 @@ b {
 @media screen and (max-width: 550px) {
   /*Navbar*/
   #navigationBar {
-    background-image: linear-gradient(to top right, #faecbe, #f587d9, #696bf0);
+    /* background-image: linear-gradient(to top right, #faecbe, #f587d9, #696bf0); */
     font-size: 1rem;
     font-weight: 500;
   }
@@ -177,5 +177,8 @@ b {
     font-size: 1.5rem;
     font-weight: 600;
     margin-left: 6rem;
+  }
+  #title {
+  display: none;
   }
 }

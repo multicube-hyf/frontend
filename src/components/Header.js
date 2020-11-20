@@ -1,83 +1,34 @@
-import React from 'react';
-import { Navbar, Nav, NavDropdown, Media } from 'react-bootstrap';
+import React from "react";
 
-import logo from '../assets/images/logo.png';
+import { Nav, Navbar, Media } from "react-bootstrap";
 
-import AuthContext from '../auth/AuthContext';
+import logo from "../assets/images/logo.png";
+import AccountCircleOutlinedIcon from "@material-ui/icons/AccountCircleOutlined";
+
+import  Star  from "../components/star/Star";
+
 
 function Header() {
-	const { userData, setUserData } = React.useContext(AuthContext);
+  return (
+    <div>
+      <Navbar id="navigationBar" className="justify-content-between">
+        <Media>
+          <img id="logoImg" src={logo} alt="logo" />
+        </Media>
+        <Navbar.Brand id="title" href="/">
+          Multi Cube
+        </Navbar.Brand>
 
-	const handleSignout = () => {
-		setUserData({
-			token: undefined,
-			user: undefined,
-		});
-		localStorage.setItem('auth-token', JSON.stringify(null));
-		document.location.href = '/signin';
-	};
-
-	return (
-		<div>
-			<Navbar id='navigationBar' collapseOnSelect expand='lg'>
-				<Media>
-					<img id='logoImg' src={logo} alt='logo' />
-				</Media>
-				<Navbar.Brand id='title' href='/'>
-					Multi Cube
-				</Navbar.Brand>
-				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
-				<Navbar.Collapse id='responsive-navbar-nav' className=''>
-					<Nav className='mr-3'>
-						{userData.user ? (
-							<NavDropdown
-								title='Welcome {userData.name}'
-								id='basic-nav-dropdown'
-							>
-								<NavDropdown.Item href='/profile'>
-									Profile
-								</NavDropdown.Item>
-								<NavDropdown.Divider />
-								<NavDropdown.Item href='/class'>
-									Classroom
-								</NavDropdown.Item>
-								<NavDropdown.Divider />
-								<NavDropdown.Item onClick={handleSignout}>
-									Sign Out
-								</NavDropdown.Item>
-							</NavDropdown>
-						) : (
-							<Nav.Link href='/signin'>Sign In</Nav.Link>
-						)}
-						{userData.user && userData.isAdmin && (
-							<NavDropdown
-								title={userData.name}
-								id='basic-nav-dropdown'
-							>
-								<NavDropdown.Item href='/admin'>
-									Admin Board
-								</NavDropdown.Item>
-								<NavDropdown.Divider />
-								<NavDropdown.Item href='/register'>
-									Register
-								</NavDropdown.Item>
-								<NavDropdown.Divider />
-
-								<NavDropdown.Item href='/users'>
-									Users
-								</NavDropdown.Item>
-								<NavDropdown.Divider />
-
-								<NavDropdown.Item onClick={handleSignout}>
-									Sign Out
-								</NavDropdown.Item>
-							</NavDropdown>
-						)}
-					</Nav>
-				</Navbar.Collapse>
-			</Navbar>
-		</div>
-	);
+		<Nav>
+		<Nav.Item className="mr-3">
+		<Star/>
+		</Nav.Item>
+		<Nav.Item>
+		  <AccountCircleOutlinedIcon color="primary" fontSize="medium"/>
+		</Nav.Item>
+        </Nav>
+      </Navbar>
+    </div>
+  );
 }
-
-export default Header;
+export default Header

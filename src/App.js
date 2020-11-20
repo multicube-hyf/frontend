@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './screens/Home';
 import AuthContext from './auth/AuthContext';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Register from './screens/Register';
 import SignIn from './screens/SignIn';
 import Profile from './screens/Profile';
@@ -34,6 +35,7 @@ function App() {
 						<Route exact path='/learn1to10' component={Learn1to10} />
 						<Route exact path='/exercise' component={Exercise1} />
 					</Switch>
+					<Footer/>
 				</AuthContext.Provider>
 			</BrowserRouter>
 		</div>
