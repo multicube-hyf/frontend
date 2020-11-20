@@ -1,14 +1,14 @@
 .pyramid-line {
   display: grid;
   grid-template-columns: 1rem 1rem;
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
   margin: 2rem;
 }
 @media screen and (max-width: 550px) {
   .pyramid-line {
     display: grid;
     grid-template-columns: 1rem 1rem;
-    grid-gap: 1rem;
+    grid-gap: 1.2rem;
     margin: 1rem;
   }
   .h4-line {
@@ -21,7 +21,7 @@
     display: grid;
     grid-template-columns: 1rem 1rem;
     grid-gap: 0.5rem;
-    margin: 0.5rem;
+    margin: 1rem;
   }
   .h4-line {
     font-size: 0.8rem;

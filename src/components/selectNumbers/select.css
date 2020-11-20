@@ -1,5 +1,77 @@
 .row-line {
+  display: grid;
+  grid-template-rows: (4, 1rem [row-start]);
+  row-gap: 2rem;
+}
+.num2find {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 7rem;
+  font-weight: 600;
+}
+.star-number {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: -2rem;
+  font-size: 1.5rem;
+  color: red;
+  font-weight: 700;
+}
+.super {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  color: red;
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 550px) {
+  .row-line {
     display: grid;
-    grid-template-columns: repeat(10, 2rem [col-start]);
-    column-gap: 1rem;
+    grid-template-rows: (4, 1rem [row-start]);
+    row-gap: 1.5rem;
   }
+  .num2find {
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 5rem;
+    font-weight: 700;
+  }
+  .super {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    color: red;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .row-line {
+    display: grid;
+    grid-template-rows: (4, 1rem [row-start]);
+    row-gap: 1rem;
+  }
+  .num2find {
+    text-align: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  .super {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    color: red;
+    font-weight: 700;
+  }
+}
