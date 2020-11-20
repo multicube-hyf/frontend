@@ -14,12 +14,26 @@ function NumbersExercise({
 	const [isCompleted, setIsCompleted] = useState(false);
 
 	useEffect(() => {
+		// Track the completition status of the current exercise
 		if (selectedCubes === numToFind) {
 			setIsCompleted(true);
 		} else {
 			setIsCompleted(false);
 		}
 	}, [selectedCubes, numToFind]);
+
+	useEffect(() => {
+		// Increment the completedExercise number by 1
+		if (isCompleted) {
+			let updateCompleted = completedExercises + 1;
+			setCompletedExercises(updateCompleted);
+		}
+		// Decrement the completedExercise number by 1 if bigger than zero
+		if (!isCompleted && completedExercises > 0) {
+			let updateCompleted = completedExercises - 1;
+			setCompletedExercises(updateCompleted);
+		}
+	}, [isCompleted]);
 
 	return (
 		<div className='row-line'>
