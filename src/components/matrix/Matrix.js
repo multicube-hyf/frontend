@@ -5,36 +5,35 @@ import "./matrix.css";
 
 Matrix.defaultProps = {
   number: 10,
-  selectedNumber: 0,
+  selectedCubes: 0,
 };
 
-function Matrix({ selectedNumber, setSelectedNumber }) {
-  const [selectedCubes, setSelectedCubes] = useState({});
+function Matrix({ selectedCubes, setSelectedCubes }) {
+  const [highlightedCubes, setHighlightedCubes] = useState({});
 
-  // Generate arrays with a list of numbers
-  // Highlighted numbers
+  // Generate arrays with a list of cube numbers
   let cubeNumbers = [...Array(10).keys()];
 
   let toggleSelect = (e) => {
     let cubeId = e.target.id;
 
     // Update the list of selected cubes
-    let updateSelected = {
-      ...selectedCubes,
-      [cubeId]: !selectedCubes[cubeId],
+    let updateHighlighted = {
+      ...highlightedCubes,
+      [cubeId]: !highlightedCubes[cubeId],
     };
-    setSelectedCubes(updateSelected);
+    setHighlightedCubes(updateHighlighted);
 
     // Update the selected cubes number
-    let updatedNumber = selectedNumber;
+    let updatedNumber = selectedCubes;
 
-    if (!selectedCubes[cubeId]) {
+    if (!highlightedCubes[cubeId]) {
       updatedNumber++;
     } else {
       updatedNumber--;
     }
 
-    setSelectedNumber(updatedNumber);
+    setSelectedCubes(updatedNumber);
   };
 
   return (
@@ -45,7 +44,7 @@ function Matrix({ selectedNumber, setSelectedNumber }) {
           id={number}
           backgroundColor={"#C3C3C3"}
           toggleSelect={toggleSelect}
-          selected={selectedCubes[number]}
+          selected={highlightedCubes[number]}
         />
       ))}
     </div>
