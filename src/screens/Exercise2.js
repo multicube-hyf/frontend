@@ -12,7 +12,10 @@ function Exercise2({ history }) {
 		completedExercises,
 		setCompletedExercises,
 		numberOfExercises,
-	} = useContext(NumberContext);
+    } = useContext(NumberContext);
+    
+    console.log(completedExercises, 'completed exercise page 2')
+    
 
 	return (
 		<div className="exerciseScreen">

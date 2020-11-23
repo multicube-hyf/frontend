@@ -36,19 +36,22 @@ function NumbersExercise({ numToFind, history }) {
 			setCompletedExercises(updateCompleted);
 		}
 		// Decrement the completedExercise number by 1 if bigger than zero
-		// if (!isCompleted && completedExercises > 0) {
-		// 	let updateCompleted = completedExercises - 1;
-		// 	setCompletedExercises(updateCompleted);
-		// }
+		if (!isCompleted && completedExercises > 0) {
+			let updateCompleted = completedExercises - 1;
+			setCompletedExercises(updateCompleted);
+		}
+
 	}, [isCompleted]);
 
 	 const handleNext= ()=>{
 		
-		console.log(nextExercise)
+		// console.log(nextExercise)
 		
-		history.push(`/exercise${nextExercise}`)
-		let nextPage = nextExercise + 1;
-		setNextExercise(nextPage)
+		history.push(`/exercise2`)
+		let updateCompleted = completedExercises + 1;
+			setCompletedExercises(updateCompleted);
+		// let nextPage = nextExercise + 1;
+		// setNextExercise(nextPage)
 	}
 
 	return (
