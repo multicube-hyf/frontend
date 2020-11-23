@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './screens/Home';
 import AuthContext from './auth/AuthContext';
-import NumberContext from './numberContex/NumberContext';
+import NumberContext from './numberContext/NumberContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Register from './screens/Register';

@@ -1,13 +1,9 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext} from 'react';
 import Progress from '../components/progress/Progress';
-import NumberContext from '../numberContex/NumberContext';
-//import Rectangle from '../components/rectangle/Rectangle';
+import NumberContext from '../numberContext/NumberContext';
 import NumbersExercise from '../components/numbersExercise/NumbersExercise';
 
-// const numberOfExercises = 3;
-
 function Exercise1({ history }) {
-	// const [completedExercises, setCompletedExercises] = useState(0);
 	const {
 		completedExercises,
 		setCompletedExercises,
