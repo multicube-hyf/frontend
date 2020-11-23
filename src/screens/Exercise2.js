@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Progress from '../components/progress/Progress';
 import NumberContext from '../numberContex/NumberContext';
 //import Rectangle from '../components/rectangle/Rectangle';
@@ -6,7 +6,7 @@ import NumbersExercise from '../components/numbersExercise/NumbersExercise';
 
 // const numberOfExercises = 3;
 
-function Exercise1({ history }) {
+function Exercise2({ history }) {
 	// const [completedExercises, setCompletedExercises] = useState(0);
 	const {
 		completedExercises,
@@ -26,7 +26,7 @@ function Exercise1({ history }) {
 
 			<NumbersExercise
 				history={history}
-				numToFind={2}
+				numToFind={5}
 				setCompletedExercises={setCompletedExercises}
 				completedExercises={completedExercises}
 			/>
@@ -34,4 +34,4 @@ function Exercise1({ history }) {
 	);
 }
 
-export default Exercise1;
+export default Exercise2;
