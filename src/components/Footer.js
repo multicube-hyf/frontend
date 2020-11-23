@@ -16,9 +16,9 @@ function Footer() {
       <Fab color="secondary" aria-label="edit">
        <Link to="/help"><Help/></Link>
        </Fab>
-       <Nav>
+       {/* <Nav>
        <Nav.Link><Button className="">Get Started</Button></Nav.Link>
-       </Nav>
+       </Nav> */}
        <Fab color="secondary" aria-label="edit">
        <Nav.Link href="/"><ArrowForwardSharpIcon/></Nav.Link>
        </Fab>
