@@ -9,7 +9,7 @@ import "./additionsExercise.css";
 function AdditionExercise({
   setCompletedExercises,
   completedExercises,
-  number1 = 9,
+  number1 = 5,
   number2 = 3
 }) {
   const [selectedCubes, setSelectedCubes] = useState(0);
