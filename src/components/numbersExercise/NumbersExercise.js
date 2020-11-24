@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-//import StarBorderIcon from '@material-ui/icons/StarBorder';
 import React, { useState, useEffect } from 'react';
 import Matrix from '../matrix/Matrix';
 import Star from '../star/Star';
