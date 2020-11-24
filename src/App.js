@@ -15,6 +15,7 @@ import Help from './screens/Help';
 import Learn1to10 from './screens/Learn1to10';
 //import SelectExercise from './components/selectExercise/SelectExercise';
 import Exercise1 from './screens/Exercise1';
+import Addition1 from './screens/Addition1';
 
 function App() {
 	const [userData, setUserData] = React.useState({
@@ -34,6 +35,8 @@ function App() {
 						<Route exact path='/profile' component={Profile} />
 						<Route exact path='/learn1to10' component={Learn1to10} />
 						<Route exact path='/exercise' component={Exercise1} />
+						<Route exact path='/addition' component={Addition1} />
+						
 					</Switch>
 					<Footer/>
 				</AuthContext.Provider>
