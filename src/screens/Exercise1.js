@@ -4,12 +4,16 @@ import NumberContext from '../numberContext/NumberContext';
 import NumbersExercise from '../components/numbersExercise/NumbersExercise';
 import Footer from '../components/Footer';
 
+
+
+
 function Exercise1({ history }) {
 	const {
 		completedExercises,
 		setCompletedExercises,
 		numberOfExercises,
 	} = useContext(NumberContext);
+
 
 	return (
 		<div className="exerciseScreen">
@@ -27,7 +31,7 @@ function Exercise1({ history }) {
 				setCompletedExercises={setCompletedExercises}
 				completedExercises={completedExercises}
 			/>
-			{/* <Footer/> */}
+			<Footer/>
 		</div>
 	);
 }

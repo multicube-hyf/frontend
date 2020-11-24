@@ -101,10 +101,14 @@ b {
 }
 /*Footer*/
 .footer{
-  display: flex;
-  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
 }
-
+.next-btn{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
 @media screen and (max-width: 550px) {
   /*Navbar*/
   #navigationBar {

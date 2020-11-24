@@ -43,9 +43,6 @@ function NumbersExercise({ numToFind, history }) {
 	}, [isCompleted]);
 
 	const handleNext = () => {
-		console.log('Im here')
-		
-
 		history.push(`/exercise2`);
 		let updateCompleted = completedExercises + 1;
 		setCompletedExercises(updateCompleted);
@@ -69,7 +66,7 @@ function NumbersExercise({ numToFind, history }) {
 
 					<p className="star-number">{numToFind}</p>
 					<p className="super">Super!</p>
-					<div className="footer fixed-bottom justify-content-end">
+					<div className="next-btn">
 					<Fab color="secondary" aria-label="edit">
 					<button className="btn btn-link" onClick={handleNext}><ArrowForwardSharpIcon/></button>
 					</Fab>

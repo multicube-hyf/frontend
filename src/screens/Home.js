@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import { Nav, Navbar, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import background from '../assets/images/background.png'
 
 

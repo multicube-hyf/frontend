@@ -25,7 +25,7 @@ function Help() {
 			<InteractivePyramid setSelectedNumber={setSelectedNumber} />
 			<h3 className="selected">{selectedNumber}</h3>
 			<Rectangle selectedNumber={selectedNumber} />
-		    <div className="footer fixed-bottom justify-content-end">
+		    <div className="next-btn">
 					<Fab color="secondary" aria-label="edit">
 					<button className="btn btn-link" onClick={routeChange}><ArrowForwardSharpIcon/></button>
 					</Fab>
