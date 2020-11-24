@@ -1,11 +1,14 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-//import StarBorderIcon from '@material-ui/icons/StarBorder';
 import React, { useState, useEffect, useContext } from 'react';
 import NumberContext from '../../numberContext/NumberContext';
 import Matrix from '../matrix/Matrix';
 import Star from '../star/Star';
 
 import './numbersExercise.css';
+
+import ArrowForwardSharpIcon from '@material-ui/icons/ArrowForwardSharp';
+import { Fab } from "@material-ui/core";
+
 
 function NumbersExercise({ numToFind, history }) {
 	const {
@@ -39,6 +42,15 @@ function NumbersExercise({ numToFind, history }) {
 		}
 	}, [isCompleted]);
 
+	const handleNext = () => {
+
+		history.push(`/exercise2`);
+		let updateCompleted = completedExercises + 1;
+		setCompletedExercises(updateCompleted);
+		
+	};
+
+
 	return (
 		<div className="row-line">
 			<p className="num2find">{numToFind}</p>
@@ -55,6 +67,11 @@ function NumbersExercise({ numToFind, history }) {
 
 					<p className="star-number">{numToFind}</p>
 					<p className="super">Super!</p>
+					<div className="footer fixed-bottom justify-content-end">
+					<Fab color="secondary" aria-label="edit">
+					<button className="btn btn-link" onClick={handleNext}><ArrowForwardSharpIcon/></button>
+					</Fab>
+					</div>
 				</div>
 			)}
 		</div>

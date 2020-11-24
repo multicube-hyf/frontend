@@ -8,13 +8,13 @@ import Home from './screens/Home';
 import AuthContext from './auth/AuthContext';
 import NumberContext from './numberContext/NumberContext';
 import Header from './components/Header';
-import Footer from './components/Footer';
+
 import Register from './screens/Register';
 import SignIn from './screens/SignIn';
 import Profile from './screens/Profile';
 import Help from './screens/Help';
 import Learn1to10 from './screens/Learn1to10';
-//import SelectExercise from './components/selectExercise/SelectExercise';
+
 import Exercise1 from './screens/Exercise1';
 import Exercise2 from './screens/Exercise2';
 import Exercise3 from './screens/Exercise3';
@@ -45,7 +45,7 @@ function App() {
 							<Route exact path="/exercise2" component={Exercise2} />
 							<Route exact path="/exercise3" component={Exercise3} />
 						</Switch>
-						<Footer />
+					
 					</NumberContext.Provider>
 				</AuthContext.Provider>
 			</BrowserRouter>

@@ -2,6 +2,7 @@ import React, { useContext} from 'react';
 import Progress from '../components/progress/Progress';
 import NumberContext from '../numberContext/NumberContext';
 import NumbersExercise from '../components/numbersExercise/NumbersExercise';
+import Footer from '../components/Footer';
 
 function Exercise1({ history }) {
 	const {
@@ -26,6 +27,7 @@ function Exercise1({ history }) {
 				setCompletedExercises={setCompletedExercises}
 				completedExercises={completedExercises}
 			/>
+			<Footer/>
 		</div>
 	);
 }
