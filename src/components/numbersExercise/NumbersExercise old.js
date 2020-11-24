@@ -39,6 +39,14 @@ function NumbersExercise({ numToFind, history }) {
 		}
 	}, [isCompleted]);
 
+	const handleNext = () => {
+
+		history.push(`/exercise2`);
+		let updateCompleted = completedExercises + 1;
+		setCompletedExercises(updateCompleted);
+		
+	};
+
 	return (
 		<div className="row-line">
 			<p className="num2find">{numToFind}</p>
@@ -53,6 +61,9 @@ function NumbersExercise({ numToFind, history }) {
 						<Star width={76} height={72} isHighlighted={true} />
 					</div>
 
+					<button type="button" onClick={handleNext}>
+						My button
+					</button>
 					<p className="star-number">{numToFind}</p>
 					<p className="super">Super!</p>
 				</div>
