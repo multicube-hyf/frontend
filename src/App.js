@@ -18,7 +18,11 @@ import Learn1to10 from './screens/Learn1to10';
 import Exercise1 from './screens/Exercise1';
 import Exercise2 from './screens/Exercise2';
 import Exercise3 from './screens/Exercise3';
+
+
 import Addition1 from './screens/Addition1';
+import Addition2 from './screens/Addition2';
+import Addition3 from './screens/Addition3';
 
 function App() {
 	const [userData, setUserData] = React.useState({
@@ -39,13 +43,15 @@ function App() {
 							<Route exact path="/" component={Home} />
 							<Route exact path="/help" component={Help} />
 							<Route exact path="/signin" component={SignIn} />
-							<Route exact path="/addition" component={Addition1} />
 							<Route exact path="/register" component={Register} />
 							<Route exact path="/profile" component={Profile} />
 							<Route exact path="/learn1to10" component={Learn1to10} />
 							<Route exact path="/exercise" component={Exercise1} />
 							<Route exact path="/exercise2" component={Exercise2} />
 							<Route exact path="/exercise3" component={Exercise3} />
+							<Route exact path="/addition" component={Addition1} />
+							<Route exact path="/addition2" component={Addition2} />
+							<Route exact path="/addition3" component={Addition3} />
 						</Switch>
 					
 					</NumberContext.Provider>

@@ -1,23 +1,30 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from 'react';
+import NumberContext from '../../numberContext/NumberContext';
 import Matrix from "../matrix/Matrix";
 import Rectangle from "../rectangle/Rectangle";
 import Star from "../star/Star";
 
 import "./additionsExercise.css";
 
+import ArrowForwardSharpIcon from '@material-ui/icons/ArrowForwardSharp';
+import { Fab } from "@material-ui/core";
+
 function AdditionExercise({
-  setCompletedExercises,
-  completedExercises,
   number1 = 5,
-  number2 = 3
+  number2 = 3,
+  history
 }) {
-  const [selectedCubes, setSelectedCubes] = useState(0);
-  const [isCompleted, setIsCompleted] = useState(false);
+  const {
+		completedExercises,
+		setCompletedExercises
+	} = useContext(NumberContext);
 
-
+	const [selectedCubes, setSelectedCubes] = useState(0);
+	const [isCompleted, setIsCompleted] = useState(false);
 
   let sum = number1 + number2;
+
   useEffect(() => {
     // Track the completion status of the current exercise
     if (selectedCubes === sum) {
@@ -40,15 +47,23 @@ function AdditionExercise({
     }
   }, [isCompleted]);
 
+  const handleNext = () => {
+		history.push(`/addition2`);
+		let updateCompleted = completedExercises + 1;
+		setCompletedExercises(updateCompleted);
+		
+	};
+
   return (
     <div className="row-line">
+    <div className="column-line">
       <p className="num2find">{number1}</p>
-      <Rectangle selectedNumber={number1} />
+      <Rectangle className="rectangle" selectedNumber={number1} />
       <h2>+</h2>
       <p className="num2find">{number2}</p>
-      <Rectangle selectedNumber={number2} />
-
-      <Matrix
+      <Rectangle className="rectangle" selectedNumber={number2} />
+      </div>
+      <Matrix className="matrix" 
         selectedCubes={selectedCubes}
         setSelectedCubes={setSelectedCubes}
       />
@@ -60,6 +75,11 @@ function AdditionExercise({
 
           <p className="star-number">{sum}</p>
           <p className="super">Super!</p>
+          <div className="next-btn">
+					<Fab color="secondary" aria-label="edit">
+					<button className="btn btn-link" onClick={handleNext}><ArrowForwardSharpIcon/></button>
+					</Fab>
+					</div>
         </div>
       )}
     </div>

@@ -6,7 +6,8 @@ import AdditionsExercise from "../components/additionsExercises/AdditionsExercis
 import Footer from '../components/Footer';
 
 
-function Addition1({sum, history}) {
+
+function Addition3({sum, history}) {
   const {
 		completedExercises,
 		setCompletedExercises,
@@ -22,16 +23,16 @@ function Addition1({sum, history}) {
           stepsNumber={numberOfExercises}
           completedStepsCount={completedExercises}
         />
-        
+       
       </div>
    <AdditionsExercise
    numToFind={sum}
    setCompletedExercises={setCompletedExercises}
    completedExercises={completedExercises}
    />
-    <Footer/>
+   <Footer/>
     </div>
   );
 }
 
-export default Addition1;
+export default Addition3;
