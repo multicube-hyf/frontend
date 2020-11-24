@@ -43,6 +43,8 @@ function NumbersExercise({ numToFind, history }) {
 	}, [isCompleted]);
 
 	const handleNext = () => {
+		console.log('Im here')
+		
 
 		history.push(`/exercise2`);
 		let updateCompleted = completedExercises + 1;

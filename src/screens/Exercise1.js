@@ -27,7 +27,7 @@ function Exercise1({ history }) {
 				setCompletedExercises={setCompletedExercises}
 				completedExercises={completedExercises}
 			/>
-			<Footer/>
+			{/* <Footer/> */}
 		</div>
 	);
 }
