@@ -5,12 +5,8 @@ import NumberContext from '../numberContext/NumberContext';
 import AdditionsExercise from '../components/additionsExercises/AdditionsExercise';
 import Footer from '../components/Footer';
 
-function Addition3({ sum, history }) {
-	const {
-		completedExercises,
-		setCompletedExercises,
-		numberOfExercises,
-	} = useContext(NumberContext);
+function Addition2({ history }) {
+	const { completedExercises, numberOfExercises } = useContext(NumberContext);
 
 	return (
 		<div className='exerciseScreen'>
@@ -20,14 +16,11 @@ function Addition3({ sum, history }) {
 					completedStepsCount={completedExercises}
 				/>
 			</div>
-			<AdditionsExercise
-				numToFind={sum}
-				setCompletedExercises={setCompletedExercises}
-				completedExercises={completedExercises}
-			/>
-			<Footer />
+
+			<AdditionsExercise history={history} number1={1} number2={3} />
+			<Footer history={history} />
 		</div>
 	);
 }
 
-export default Addition3;
+export default Addition2;

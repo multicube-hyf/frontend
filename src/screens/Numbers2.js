@@ -7,7 +7,6 @@ import Footer from '../components/Footer';
 function Exercise2({ history }) {
 	const {
 		completedExercises,
-		setCompletedExercises,
 		numberOfExercises,
 	} = useContext(NumberContext);
 
@@ -18,14 +17,11 @@ function Exercise2({ history }) {
 					stepsNumber={numberOfExercises}
 					completedStepsCount={completedExercises}
 				/>
-				Completed: {completedExercises}
 			</div>
 
 			<NumbersExercise
 				history={history}
 				numToFind={3}
-				setCompletedExercises={setCompletedExercises}
-				completedExercises={completedExercises}
 			/>
 			<Footer history={history} />
 		</div>

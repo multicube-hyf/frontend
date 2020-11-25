@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import './App.css';
@@ -24,15 +24,16 @@ import Addition2 from './screens/Addition2';
 import Addition3 from './screens/Addition3';
 
 function App() {
-	const [userData, setUserData] = React.useState({
+	const [userData, setUserData] = useState({
 		token: undefined,
 		user: undefined,
 	});
 
-	const [numberOfExercises, setNumberOfExercises] = React.useState(3);
+	const [numberOfExercises, setNumberOfExercises] = useState(3);
+	const [completedExercises, setCompletedExercises] = useState(0);
+	const [isCompleted, setIsCompleted] = useState(false);
+	const [currentType, setCurrentType] = useState(1);
 
-	const [completedExercises, setCompletedExercises] = React.useState(0);
-	const [isCompleted, setIsCompleted] = React.useState(false);
 	return (
 		<div className='App'>
 			<BrowserRouter>
@@ -45,6 +46,8 @@ function App() {
 							setNumberOfExercises,
 							isCompleted,
 							setIsCompleted,
+							currentType,
+							setCurrentType,
 						}}
 					>
 						<Header />
