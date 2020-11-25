@@ -7,9 +7,9 @@
 .numbers-2{
     position: relative;
 	text-align: center;
-    font-size: 5rem;
+    font-size: 2.4rem;
     font-weight: 700;
-    padding-top: 1rem;
+    margin-top: -0.5rem;
 
 }
 .rectangle {

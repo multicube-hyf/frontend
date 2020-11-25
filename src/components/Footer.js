@@ -7,7 +7,7 @@ import NextButton from './next button/NextButton';
 
 function Footer({ history }) {
 	const handlerHelp = () => {
-		history.push('/help/');
+		history.push('/help');
 	};
 
 	return (

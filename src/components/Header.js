@@ -14,14 +14,15 @@ function Header() {
   const { completedExercises, numberOfExercises } = useContext(NumberContext);
   return (
     <div>
-      <Navbar id="navigationBar" className="justify-content-between">
-        <Media>
+	  <Navbar id="navigationBar" className="justify-content-between">
+	  <Navbar.Brand href="/">
+       
           <img id="logoImg" src={logo} alt="logo" />
-        </Media>
         
+       </Navbar.Brand> 
 
 		<Nav>
-		<Nav.Item className="mr-3">
+		<Nav.Item>
 		<div className='progressStars'>
 				<Progress
 					stepsNumber={numberOfExercises}
@@ -30,7 +31,7 @@ function Header() {
 			</div>
 		</Nav.Item>
 		<Nav.Item>
-		  <AccountCircleOutlinedIcon color="primary" fontSize="medium"/>
+		  <AccountCircleOutlinedIcon color="primary" fontSize="large"/>
 		</Nav.Item>
         </Nav>
       </Navbar>

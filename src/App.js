@@ -50,7 +50,7 @@ function App() {
 							setCurrentType,
 						}}
 					>
-						<Header />
+						
 						<Switch>
 							<Route exact path='/' component={Home} />
 							<Route exact path='/help' component={Help} />
