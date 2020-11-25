@@ -4,7 +4,7 @@ import NumberContext from '../numberContext/NumberContext';
 import NumbersExercise from '../components/numbersExercise/NumbersExercise';
 import Footer from '../components/Footer';
 
-function Exercise2({ history }) {
+function Exercise3({ history }) {
 	const {
 		completedExercises,
 		setCompletedExercises,
@@ -23,7 +23,7 @@ function Exercise2({ history }) {
 
 			<NumbersExercise
 				history={history}
-				numToFind={5}
+				numToFind={1}
 				setCompletedExercises={setCompletedExercises}
 				completedExercises={completedExercises}
 			/>
@@ -32,4 +32,4 @@ function Exercise2({ history }) {
 	);
 }
 
-export default Exercise2;
+export default Exercise3;

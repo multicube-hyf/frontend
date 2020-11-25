@@ -16,7 +16,7 @@ function Footer({ history }) {
 					<Help />
 				</button>
 			</Fab>
-      <NextButton history={history} />
+			<NextButton history={history} />
 		</div>
 	);
 }

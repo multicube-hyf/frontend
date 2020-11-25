@@ -15,9 +15,9 @@ import Profile from './screens/Profile';
 import Help from './screens/Help';
 import Learn1to10 from './screens/Learn1to10';
 
-import Exercise1 from './screens/Exercise1';
-import Exercise2 from './screens/Exercise2';
-import Exercise3 from './screens/Exercise3';
+import Numbers1 from './screens/Numbers1';
+import Numbers2 from './screens/Numbers2';
+import Numbers3 from './screens/Numbers3';
 
 import Addition1 from './screens/Addition1';
 import Addition2 from './screens/Addition2';
@@ -29,7 +29,7 @@ function App() {
 		user: undefined,
 	});
 
-	const numberOfExercises = 3;
+	const [numberOfExercises, setNumberOfExercises] = React.useState(3);
 
 	const [completedExercises, setCompletedExercises] = React.useState(0);
 	const [isCompleted, setIsCompleted] = React.useState(false);
@@ -42,6 +42,7 @@ function App() {
 							completedExercises,
 							setCompletedExercises,
 							numberOfExercises,
+							setNumberOfExercises,
 							isCompleted,
 							setIsCompleted,
 						}}
@@ -64,22 +65,22 @@ function App() {
 							/>
 							<Route
 								exact
-								path='/exercise'
-								component={Exercise1}
+								path='/numbers1'
+								component={Numbers1}
 							/>
 							<Route
 								exact
-								path='/exercise2'
-								component={Exercise2}
+								path='/numbers2'
+								component={Numbers2}
 							/>
 							<Route
 								exact
-								path='/exercise3'
-								component={Exercise3}
+								path='/numbers3'
+								component={Numbers3}
 							/>
 							<Route
 								exact
-								path='/addition'
+								path='/addition1'
 								component={Addition1}
 							/>
 							<Route
