@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+
 import { Modal, Button } from "react-bootstrap";
 
 import ArrowForwardSharpIcon from "@material-ui/icons/ArrowForwardSharp";
@@ -7,8 +7,9 @@ import { Fab } from "@material-ui/core";
 
 import InteractivePyramid from "../components/interactive pyramid/InteractivePyramid";
 import Rectangle from "../components/rectangle/Rectangle";
+import  Help  from "../components/help/Help";
 
-function Help() {
+function HelpModal({history}) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -16,17 +17,18 @@ function Help() {
 
   const [selectedNumber, setSelectedNumber] = useState(1);
 
-  const history = useHistory();
+  
 
   const routeChange = () => {
     history.goBack();
   };
 
   return (
-    <div>
-    <Button variant="primary" onClick={handleShow}>
-    Launch demo modal
-  </Button>
+    <div className="help-modal">
+  <button className='btn btn-link' onClick={handleShow}>
+  <Help/>
+  </button>
+
 
   <Modal show={show} onHide={handleClose} animation={false}>
     <Modal.Header closeButton>
@@ -53,4 +55,4 @@ function Help() {
   );
 }
 
-export default Help;
+export default HelpModal;

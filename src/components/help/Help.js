@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Help2() {
+function Help() {
     return (
         <div>
         <svg width="48" height="64" viewBox="0 0 71 69" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,4 +18,4 @@ function Help2() {
     )
 }
 
-export default Help2
+export default Help

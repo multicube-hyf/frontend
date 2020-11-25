@@ -7,12 +7,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './screens/Home';
 import AuthContext from './auth/AuthContext';
 import NumberContext from './numberContext/NumberContext';
-import Header from './components/Header';
+
 
 import Register from './screens/Register';
 import SignIn from './screens/SignIn';
 import Profile from './screens/Profile';
-import Help from './screens/Help';
+
 import Learn1to10 from './screens/Learn1to10';
 
 import Numbers1 from './screens/Numbers1';
@@ -22,6 +22,7 @@ import Numbers3 from './screens/Numbers3';
 import Addition1 from './screens/Addition1';
 import Addition2 from './screens/Addition2';
 import Addition3 from './screens/Addition3';
+import HelpModal from './screens/HelpModal';
 
 function App() {
 	const [userData, setUserData] = useState({
@@ -53,7 +54,7 @@ function App() {
 						
 						<Switch>
 							<Route exact path='/' component={Home} />
-							<Route exact path='/help' component={Help} />
+							<Route exact path='/help' component={HelpModal} />
 							<Route exact path='/signin' component={SignIn} />
 							<Route
 								exact
