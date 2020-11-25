@@ -12,8 +12,8 @@ function Exercise2({ history }) {
 	} = useContext(NumberContext);
 
 	return (
-		<div className="exerciseScreen">
-			<div className="progressStars">
+		<div className='exerciseScreen'>
+			<div className='progressStars'>
 				<Progress
 					stepsNumber={numberOfExercises}
 					completedStepsCount={completedExercises}
@@ -27,7 +27,7 @@ function Exercise2({ history }) {
 				setCompletedExercises={setCompletedExercises}
 				completedExercises={completedExercises}
 			/>
-			<Footer/>
+			<Footer history={history} />
 		</div>
 	);
 }

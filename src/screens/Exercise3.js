@@ -1,9 +1,8 @@
-import React, { useContext} from 'react';
+import React, { useContext } from 'react';
 import Progress from '../components/progress/Progress';
 import NumberContext from '../numberContext/NumberContext';
 import NumbersExercise from '../components/numbersExercise/NumbersExercise';
 import Footer from '../components/Footer';
-
 
 function Exercise3({ history }) {
 	const {
@@ -13,8 +12,8 @@ function Exercise3({ history }) {
 	} = useContext(NumberContext);
 
 	return (
-		<div className="exerciseScreen">
-			<div className="progressStars">
+		<div className='exerciseScreen'>
+			<div className='progressStars'>
 				<Progress
 					stepsNumber={numberOfExercises}
 					completedStepsCount={completedExercises}
@@ -28,7 +27,7 @@ function Exercise3({ history }) {
 				setCompletedExercises={setCompletedExercises}
 				completedExercises={completedExercises}
 			/>
-			<Footer/>
+			<Footer history={history} />
 		</div>
 	);
 }

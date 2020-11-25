@@ -6,18 +6,15 @@ import Star from '../star/Star';
 
 import './numbersExercise.css';
 
-import ArrowForwardSharpIcon from '@material-ui/icons/ArrowForwardSharp';
-import { Fab } from "@material-ui/core";
-
-
-function NumbersExercise({ numToFind, history }) {
+function NumbersExercise({ numToFind }) {
 	const {
 		completedExercises,
-		setCompletedExercises
+		setCompletedExercises,
+		isCompleted,
+		setIsCompleted,
 	} = useContext(NumberContext);
 
 	const [selectedCubes, setSelectedCubes] = useState(0);
-	const [isCompleted, setIsCompleted] = useState(false);
 
 	useEffect(() => {
 		// Track the completion status of the current exercise
@@ -42,17 +39,9 @@ function NumbersExercise({ numToFind, history }) {
 		}
 	}, [isCompleted]);
 
-	const handleNext = () => {
-		history.push(`/exercise2`);
-		let updateCompleted = completedExercises + 1;
-		setCompletedExercises(updateCompleted);
-		
-	};
-
-
 	return (
-		<div className="row-line">
-			<p className="num2find">{numToFind}</p>
+		<div className='row-line'>
+			<p className='num2find'>{numToFind}</p>
 
 			<Matrix
 				selectedCubes={selectedCubes}
@@ -60,17 +49,12 @@ function NumbersExercise({ numToFind, history }) {
 			/>
 			{isCompleted && (
 				<div>
-					<div className="star-position">
+					<div className='star-position'>
 						<Star width={76} height={72} isHighlighted={true} />
 					</div>
 
-					<p className="star-number">{numToFind}</p>
-					<p className="super">Super!</p>
-					<div className="next-btn">
-					<Fab color="secondary" aria-label="edit">
-					<button className="btn btn-link" onClick={handleNext}><ArrowForwardSharpIcon/></button>
-					</Fab>
-					</div>
+					<p className='star-number'>{numToFind}</p>
+					<p className='super'>Super!</p>
 				</div>
 			)}
 		</div>
