@@ -15,6 +15,14 @@ h1 {
   width: 30%;
   height: 30%;
 }
+.get-started{
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  color: #EE7F4C;
+
+}
 /*Help screen*/
 .selected{
   font-size: 3rem;
@@ -97,15 +105,17 @@ b {
 	left: 0;
 	right: 0;
   text-align: center;
-  padding: 1rem;
+  padding-top: 0.5rem;
 }
 /*Footer*/
 .footer{
+  padding: 0.5rem;
   position: fixed;
   bottom: 0;
 }
 .next-btn{
   position: fixed;
+  padding: 0.5rem;
   right: 0;
   bottom: 0;
 }

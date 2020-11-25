@@ -14,7 +14,7 @@
 @media screen and (max-width: 350px) {
   .line {
     display: grid;
-    grid-template-columns: repeat(10, 0.6rem [col-start]);
-    column-gap: 0.6rem;
+    grid-template-columns: repeat(10, 0.9rem [col-start]);
+    column-gap: 1rem;
   }
 }

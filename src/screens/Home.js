@@ -15,8 +15,8 @@ function Home() {
 			<h1>
 				<Link to='/signin'>Sign-in</Link>
 			</h1>
-			<Link to='/numbers1'>
-				<Button className=''>Get Started</Button>
+			<Link  to='/numbers1'>
+				<Button variant="danger" className="get-started">Get Started!</Button>
 			</Link>
 		</div>
 	);

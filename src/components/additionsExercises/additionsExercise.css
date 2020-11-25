@@ -1,113 +1,61 @@
-
 .row-line {
-display: grid;
-   grid-row: 1;
-
+    display: grid;
+    grid-template-columns: (5, 0.5rem [column-start]);
+    row-gap: 0rem;
+    margin: auto;
 }
-.column-line{
-	display: grid;
-	grid-column: auto;
-}
-.num2find {
-	position: relative;
+.numbers-2{
+    position: relative;
 	text-align: center;
-	margin-top: 1.5rem;
-	padding-top: 1rem;
-	font-size: 5rem;
-	font-weight: 600;
-}
+    font-size: 5rem;
+    font-weight: 700;
+    padding-top: 1rem;
 
-h2{
-	margin: 1rem auto;
-	align-items: center;
-	font-weight: 500;
 }
+.rectangle {
+    display: grid;
+    grid-template-columns: repeat(5, 2rem [col-start]);
+    row-gap: 0.5rem;
+    column-gap: 0.7rem;
+    margin: auto;
+  }
+  
+  
+  h2{
+     
+      text-align: center;
+  }
 
 
-.star-number {
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	text-align: center;
-	margin-top: -3.3rem;
-	font-size: 1.5rem;
-	color: red;
-	font-weight: 700;
-}
-
-.star-position {
-	margin-top: 1.5rem;
-    text-align: center;
-	
-}
-
-.super {
-	position: relative;
-	margin: 0 auto;
-	text-align: center;
-	color: red;
-	padding: 1rem;
-	font-size: 1.5rem;
-	font-weight: 700;
-}
-.rectangle{
-	margin: auto;
-}
-.matrix{
-	padding-top: 8rem;
-	margin: 0 auto;
-}
-
-@media screen and (max-width: 550px) {
-	.star-position {
-		margin-top: 1rem;
-	}
-	.row-line {
-		display: grid;
-		grid-template-rows: (6, 0.5rem [row-start]);
-		row-gap: 0rem;
-	}
-	.num2find {
-	position: relative;
-	text-align: center;
-	margin-top: 1.5rem;
-	font-size: 4rem;
-	}
-	.rectangle{
-		margin: 0 auto;
-	}
-	.super {
-		position: relative;
-		margin: 0 auto;
-		text-align: center;
-		color: red;
-		font-size: 1rem;
-		font-weight: 700;
-	}
-}
 
 @media screen and (max-width: 350px) {
-	.num2find {
-	position: relative;
+
+.row-line {
+    display: grid;
+    grid-template-columns: (5, 0.5rem [column-start]);
+    row-gap: 0rem;
+    margin: auto;
+}
+.number1,
+.number2{
+    position: relative;
 	text-align: center;
-	padding-top: 2rem;
-	font-size: 2rem;
-	}
-	h2{
-		margin: 0 auto;
-		align-items: center;
-	}
-	.super {
-		position: relative;
-		margin: 0 auto;
-		text-align: center;
-		color: red;
-		font-weight: 700;
-	}
-	.matrix{
-		padding-top: 2rem;
-		
-	}
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 1rem;
+
+}
+.rectangle {
+    display: grid;
+    grid-template-columns: repeat(5, 1.6rem [col-start]);
+    row-gap: 0.5rem;
+    column-gap: 0.7rem;
+    margin: auto;
+  }
+  
+  
+  h2{
+     
+      text-align: center;
+  }
 }

@@ -4,6 +4,7 @@ import NumberContext from '../../numberContext/NumberContext';
 import Matrix from '../matrix/Matrix';
 import Rectangle from '../rectangle/Rectangle';
 import Star from '../star/Star';
+import {Row, Col } from "react-bootstrap";
 
 import './additionsExercise.css';
 
@@ -52,19 +53,19 @@ function AdditionExercise({ number1, number2, history }) {
 	};
 
 	return (
-		<div className='row-line'>
-			<div className='column-line'>
-				<p className='num2find'>{number1}</p>
-				<Rectangle className='rectangle' selectedNumber={number1} />
-				<h2>+</h2>
-				<p className='num2find'>{number2}</p>
+		<div>
+			<p className='numbers-2'>{number1}<strong>+</strong>{number2}</p>
+			<div className="row-line">
+				<Rectangle className='rectangle space' selectedNumber={number1} />
+				<h2><strong>+</strong></h2>
 				<Rectangle className='rectangle' selectedNumber={number2} />
-			</div>
+				<h2><strong>=</strong></h2>
 			<Matrix
 				className='matrix'
 				selectedCubes={selectedCubes}
 				setSelectedCubes={setSelectedCubes}
 			/>
+			</div>
 			{isCompleted && (
 				<div>
 					<div className='star-position'>

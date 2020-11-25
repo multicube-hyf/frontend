@@ -1,84 +1,67 @@
-.row-line {
-	display: grid;
-	grid-template-rows: (5, 1rem [row-start]);
-	row-gap: 1rem;
-}
-
 .num2find {
-	position: relative;
-	text-align: center;
-	margin-top: 1.5rem;
-	padding-top: 1rem;
-	font-size: 7rem;
-	font-weight: 600;
+  position: relative;
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  font-size: 7rem;
+  font-weight: 600;
 }
 
 .star-number {
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	text-align: center;
-	margin-top: -3.3rem;
-	font-size: 1.5rem;
-	color: red;
-	font-weight: 700;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: -3.3rem;
+  font-size: 1.5rem;
+  color: red;
+  font-weight: 700;
 }
 
 .star-position {
-	margin-top: 1.5rem;
-    text-align: center;
-	
+  text-align: center;
 }
 
 .super {
-	position: relative;
-	margin: 0 auto;
-	text-align: center;
-	color: red;
-	padding: 1rem;
-	font-size: 1.5rem;
-	font-weight: 700;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  color: red;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 550px) {
-	.star-position {
-		margin-top: 1rem;
-	}
-	.row-line {
-		display: grid;
-		grid-template-rows: (5, 0.5rem [row-start]);
-		row-gap: 0rem;
-	}
-	.num2find {
-	position: relative;
-	text-align: center;
-	margin-top: 1.5rem;
-	font-size: 5rem;
-	}
-	.super {
-		position: relative;
-		margin: 0 auto;
-		text-align: center;
-		color: red;
-		font-size: 1rem;
-		font-weight: 700;
-	}
+  .num2find {
+    position: relative;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 5rem;
+  }
+  .super {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    color: red;
+    font-size: 1rem;
+    font-weight: 700;
+  }
 }
 
 @media screen and (max-width: 350px) {
-	.num2find {
-	position: relative;
-	text-align: center;
-	padding-top:2rem;
-	font-size: 3rem;
-	}
-	.super {
-		position: relative;
-		margin: 0 auto;
-		text-align: center;
-		color: red;
-		font-weight: 700;
-	}
+  .num2find {
+    position: relative;
+    text-align: center;
+    font-size: 5rem;
+  }
+  .super {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    color: red;
+    font-weight: 700;
+  }
 }

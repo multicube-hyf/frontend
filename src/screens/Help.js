@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-import ArrowForwardSharpIcon from "@material-ui/icons/ArrowForwardSharp";
+import ClearIcon from '@material-ui/icons/Clear';
 import { Fab } from "@material-ui/core";
 
 import InteractivePyramid from "../components/interactive pyramid/InteractivePyramid";
@@ -24,7 +24,7 @@ function Help() {
       <div className="next-btn">
         <Fab color="secondary" aria-label="edit">
           <button className="btn btn-link" onClick={routeChange}>
-            <ArrowForwardSharpIcon />
+            <ClearIcon />
           </button>
         </Fab>
       </div>

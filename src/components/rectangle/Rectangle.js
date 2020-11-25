@@ -24,7 +24,7 @@ function Rectangle({ number, selectedNumber }) {
         <Cube key={number} backgroundColor={colors[selectedNumber]} />
       ))}
       {regularNumbers.map((number) => (
-        <Cube key={number} backgroundColor={"#858585"} />
+        <Cube key={number} backgroundColor={"#C1C1C1"} />
       ))}
     </div>
   );

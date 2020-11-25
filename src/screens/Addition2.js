@@ -1,26 +1,15 @@
-import React, { useContext } from 'react';
-import Progress from '../components/progress/Progress';
-import NumberContext from '../numberContext/NumberContext';
+import React from "react";
 
-import AdditionsExercise from '../components/additionsExercises/AdditionsExercise';
-import Footer from '../components/Footer';
+import AdditionsExercise from "../components/additionsExercises/AdditionsExercise";
+import Footer from "../components/Footer";
 
 function Addition2({ history }) {
-	const { completedExercises, numberOfExercises } = useContext(NumberContext);
-
-	return (
-		<div className='exerciseScreen'>
-			<div className='progressStars'>
-				<Progress
-					stepsNumber={numberOfExercises}
-					completedStepsCount={completedExercises}
-				/>
-			</div>
-
-			<AdditionsExercise history={history} number1={4} number2={2} />
-			<Footer history={history} />
-		</div>
-	);
+  return (
+    <div className="exerciseScreen">
+      <AdditionsExercise history={history} number1={4} number2={2} />
+      <Footer history={history} />
+    </div>
+  );
 }
 
 export default Addition2;

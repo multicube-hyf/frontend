@@ -1,27 +1,33 @@
-import React from "react";
+import React, { useContext }  from "react";
+import Progress from '../components/progress/Progress';
+import NumberContext from '../numberContext/NumberContext';
 
 import { Nav, Navbar, Media } from "react-bootstrap";
 
 import logo from "../assets/images/logo.png";
 import AccountCircleOutlinedIcon from "@material-ui/icons/AccountCircleOutlined";
 
-import  Star  from "../components/star/Star";
+
 
 
 function Header() {
+  const { completedExercises, numberOfExercises } = useContext(NumberContext);
   return (
     <div>
       <Navbar id="navigationBar" className="justify-content-between">
         <Media>
           <img id="logoImg" src={logo} alt="logo" />
         </Media>
-        <Navbar.Brand id="title" href="/">
-          Multi Cube
-        </Navbar.Brand>
+        
 
 		<Nav>
 		<Nav.Item className="mr-3">
-		<Star/>
+		<div className='progressStars'>
+				<Progress
+					stepsNumber={numberOfExercises}
+					completedStepsCount={completedExercises}
+				/>
+			</div>
 		</Nav.Item>
 		<Nav.Item>
 		  <AccountCircleOutlinedIcon color="primary" fontSize="medium"/>
