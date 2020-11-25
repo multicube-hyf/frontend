@@ -119,6 +119,9 @@ b {
   right: 0;
   bottom: 0;
 }
+.fab-help{
+  background-color: yellow;
+}
 @media screen and (max-width: 550px) {
   /*Navbar*/
   #navigationBar {

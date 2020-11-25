@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import background from '../assets/images/background.png';
+import Help2 from '../components/help/Help';
 
 function Home() {
 	return (
@@ -18,6 +19,7 @@ function Home() {
 			<Link  to='/numbers1'>
 				<Button variant="danger" className="get-started">Get Started!</Button>
 			</Link>
+			
 		</div>
 	);
 }
