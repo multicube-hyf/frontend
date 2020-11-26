@@ -1,0 +1,61 @@
+.row-line {
+    display: grid;
+    grid-template-columns: (5, 0.5rem [column-start]);
+    row-gap: 0rem;
+    margin: auto;
+}
+.numbers-2{
+    position: relative;
+	text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-top: -0.5rem;
+
+}
+.rectangle {
+    display: grid;
+    grid-template-columns: repeat(5, 2rem [col-start]);
+    row-gap: 0.5rem;
+    column-gap: 0.7rem;
+    margin: auto;
+  }
+  
+  
+  h2{
+     
+      text-align: center;
+  }
+
+
+
+@media screen and (max-width: 350px) {
+
+.row-line {
+    display: grid;
+    grid-template-columns: (5, 0.5rem [column-start]);
+    row-gap: 0rem;
+    margin: auto;
+}
+.number1,
+.number2{
+    position: relative;
+	text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 1rem;
+
+}
+.rectangle {
+    display: grid;
+    grid-template-columns: repeat(5, 1.6rem [col-start]);
+    row-gap: 0.5rem;
+    column-gap: 0.7rem;
+    margin: auto;
+  }
+  
+  
+  h2{
+     
+      text-align: center;
+  }
+}

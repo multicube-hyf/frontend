@@ -1,0 +1,68 @@
+.num2find {
+  position: relative;
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  font-size: 7rem;
+  font-weight: 600;
+}
+
+.star-number {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: -3.3rem;
+  font-size: 1.5rem;
+  color: #1b1b1b;
+  font-weight: 700;
+}
+
+.star-position {
+  text-align: center;
+}
+
+.super {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  color: #EE7F4C;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 550px) {
+  .num2find {
+    position: relative;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 5rem;
+  }
+  .super {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    color: #EE7F4C;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .num2find {
+    position: relative;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+  }
+  .super {
+    position: relative;
+    margin: -1.2rem auto;
+    text-align: center;
+    color: #EE7F4C;
+    font-weight: 800;
+  }
+}
