@@ -3,6 +3,7 @@ import { Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Axios from 'axios';
 import ErrorNotice from "../err/ErrorNotice";
+import Close from "../components/help/Close";
 
 function Signin(props) {
   const [email, setEmail] = useState("");
@@ -61,13 +62,19 @@ function Signin(props) {
            >
             Submit
           </Button>
-          <Form.Text>Forgot password?</Form.Text>
-          <Link to='/changepassword' className="btn btn-outline-dark create-acc mt-4 btn-lg btn-block" id="Change">
-            Change Password
-          </Link>
+          <Form.Text className="m-4">Forgot password?  <Link to='/changepassword'  id="Change">
+          Change Password
+        </Link></Form.Text>
+        <Link to="/">
+        <Close/>
+      </Link>
+        
         </Form>
+        
       </div>
+    
       </div>
+      
     );
   
 }
