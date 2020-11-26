@@ -51,8 +51,7 @@ b {
   font-size: 2rem;
 }
 .form-container {
-  display: flex;
-  flex-direction: column;
+
   border: 0.1rem solid #858585;
   border-radius: 0.2rem;
   margin: 2rem 0rem 4rem 0rem;
@@ -102,6 +101,7 @@ b {
   text-align: center;
   padding-bottom: 0rem;
 }
+
 /*Footer*/
 .footer{
   padding: 0.5rem;
@@ -172,11 +172,9 @@ b {
     font-size: 0.6rem;
   }
   .form-container {
-    display: flex;
-    flex-direction: column;
     border: 0.1rem solid #858585;
     border-radius: 0.2rem;
-    margin: 2rem 0.6rem 2rem 0.6rem;
+    margin: 2rem 0.6rem 1rem 0.6rem;
     padding: 1rem;
   }
   .form-control {
@@ -193,7 +191,8 @@ b {
   #SubmitCP,
   #Submit,
   #Change {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    
   }
   /*Help screen*/
 .selected{
@@ -220,5 +219,8 @@ b {
     text-align: center;
     margin: 0;
     padding: 0;
+  }
+  .close-btn{
+    margin: 2rem;
   }
 }
