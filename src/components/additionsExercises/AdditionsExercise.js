@@ -47,7 +47,7 @@ function AdditionExercise({ number1, number2, history }) {
 
 	return (
 		<div>
-			<p className='numbers-2'>{number1}<strong>+</strong>{number2}</p>
+			<p className='numbers-2'>{number1}{' '}<strong>+</strong>{" "}{number2}{''}<strong>=</strong>{" "}{''}<strong>?</strong></p>
 			<div className="row-line">
 				<Rectangle className='rectangle space' selectedNumber={number1} />
 				<h2><strong>+</strong></h2>
