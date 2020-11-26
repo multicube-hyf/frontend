@@ -14,12 +14,11 @@ function Home() {
 				src={background}
 				alt='people with phones'
 			/>
-			<h1>
-				<Link to='/signin'>Sign-in</Link>
-			</h1>
-			<Link className="get-started" to='/numbers1'>
+			<Link to='/numbers1'>
 				<GetStarted/>
 			</Link>
+			
+			<Link className="get-started" to='/signin'>Sign-in</Link>
 			
 		</div>
 	);

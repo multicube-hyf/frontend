@@ -5,7 +5,8 @@ import NumberContext from '../numberContext/NumberContext';
 import { Nav, Navbar} from "react-bootstrap";
 
 import logo from "../assets/images/logo.png";
-import AccountCircleOutlinedIcon from "@material-ui/icons/AccountCircleOutlined";
+
+import  Icon  from "./help/Icon";
 
 
 
@@ -31,7 +32,7 @@ function Header() {
 			</div>
 		</Nav.Item>
 		<Nav.Item>
-		  <AccountCircleOutlinedIcon color="primary" fontSize="large"/>
+		<Icon/>
 		</Nav.Item>
         </Nav>
       </Navbar>

@@ -4,13 +4,7 @@
   margin-top: 2rem;
   text-align: center;
 }
-h1 {
-  color: #11cfdd;
-  font-family: italic;
-  font-size: 3rem;
-  font-weight: 400;
-  text-align: center;
-}
+
 .backgroundHome {
   margin: 5rem auto;
   width: 30%;
@@ -21,7 +15,7 @@ h1 {
   left: 50%;
   bottom: 0;
   transform: translate(-50%, -50%);
-  color: #EE7F4C;
+  color: #141414;
 
 }
 /*Help screen*/
@@ -206,6 +200,7 @@ b {
   font-size: 1.5rem;
   font-weight: 600;
   margin-left: 9rem;
+  
 }
 }
 @media screen and (max-width: 330px) {
@@ -214,6 +209,7 @@ b {
     font-size: 1.5rem;
     font-weight: 600;
     margin-left: 6rem;
+    
   }
   #title {
   display: none;
