@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Modal, Button } from "react-bootstrap";
+import { Modal} from "react-bootstrap";
 
 import ArrowForwardSharpIcon from "@material-ui/icons/ArrowForwardSharp";
 import { Fab } from "@material-ui/core";
@@ -32,22 +32,15 @@ function HelpModal({history}) {
 
   <Modal show={show} onHide={handleClose} animation={false}>
     <Modal.Header closeButton>
-      <Modal.Title>Numbers 1 to 10</Modal.Title>
+      <Modal.Title>Help</Modal.Title>
     </Modal.Header>
     <Modal.Body>
     <InteractivePyramid setSelectedNumber={setSelectedNumber} />
-    <h3 className="selected">{selectedNumber}</h3>
-    <Rectangle selectedNumber={selectedNumber} />
+    
     </Modal.Body>
     <Modal.Footer>
-    <div className="next-btn">
-    <Fab color="secondary" aria-label="edit">
-      <button className="btn btn-link" onClick={routeChange}>
-        <ArrowForwardSharpIcon />
-      </button>
-    </Fab>
-  </div>
-     
+    <h3 className="selected">{selectedNumber}</h3>
+    <Rectangle selectedNumber={selectedNumber} />
     </Modal.Footer>
   </Modal>
      

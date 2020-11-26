@@ -2,7 +2,7 @@ import React, { useContext }  from "react";
 import Progress from '../components/progress/Progress';
 import NumberContext from '../numberContext/NumberContext';
 
-import { Nav, Navbar, Media } from "react-bootstrap";
+import { Nav, Navbar} from "react-bootstrap";
 
 import logo from "../assets/images/logo.png";
 import AccountCircleOutlinedIcon from "@material-ui/icons/AccountCircleOutlined";

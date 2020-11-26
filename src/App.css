@@ -155,6 +155,10 @@ b {
     margin: 0;
     padding: 0;
   }
+  .modal-dialog{
+    margin: 0;
+    padding: 0;
+  }
   /*Signin form*/
   b {
     color: #533f35;

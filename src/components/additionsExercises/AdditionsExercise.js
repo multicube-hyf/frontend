@@ -18,7 +18,7 @@ function AdditionExercise({ number1, number2, history }) {
 	} = useContext(NumberContext);
 
 	const [selectedCubes, setSelectedCubes] = useState(0);
-	// const [isCompleted, setIsCompleted] = useState(false);
+
 
 	let sum = number1 + number2;
 

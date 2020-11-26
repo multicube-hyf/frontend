@@ -1,9 +1,8 @@
-import React, { useContext, useState } from "react";
+import React, { useContext} from "react";
 
 import NumberContext from "../../numberContext/NumberContext";
 
-import ArrowForwardSharpIcon from "@material-ui/icons/ArrowForwardSharp";
-import { Fab } from "@material-ui/core";
+
 import Next from "../help/Next";
 
 const exerciseTypes = { 1: "numbers", 2: "addition" };
