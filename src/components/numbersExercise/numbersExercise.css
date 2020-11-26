@@ -28,10 +28,10 @@
   position: relative;
   margin: 0 auto;
   text-align: center;
-  color: red;
+  color: #EE7F4C;
   padding: 1rem;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 @media screen and (max-width: 550px) {
@@ -45,9 +45,9 @@
     position: relative;
     margin: 0 auto;
     text-align: center;
-    color: red;
+    color: #EE7F4C;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 800;
   }
 }
 
@@ -62,7 +62,7 @@
     position: relative;
     margin: -1.2rem auto;
     text-align: center;
-    color: red;
-    font-weight: 700;
+    color: #EE7F4C;
+    font-weight: 800;
   }
 }
