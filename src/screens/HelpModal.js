@@ -2,8 +2,6 @@ import React, { useState } from "react";
 
 import { Modal} from "react-bootstrap";
 
-import ArrowForwardSharpIcon from "@material-ui/icons/ArrowForwardSharp";
-import { Fab } from "@material-ui/core";
 
 import InteractivePyramid from "../components/interactive pyramid/InteractivePyramid";
 import Rectangle from "../components/rectangle/Rectangle";
@@ -17,11 +15,6 @@ function HelpModal({history}) {
 
   const [selectedNumber, setSelectedNumber] = useState(1);
 
-  
-
-  const routeChange = () => {
-    history.goBack();
-  };
 
   return (
     <div className="help-modal">
@@ -36,11 +29,11 @@ function HelpModal({history}) {
     </Modal.Header>
     <Modal.Body>
     <InteractivePyramid setSelectedNumber={setSelectedNumber} />
-    
+    <h3 className="selected">{selectedNumber}</h3>
+    <div className="ml-5"><Rectangle selectedNumber={selectedNumber} /></div>
     </Modal.Body>
     <Modal.Footer>
-    <h3 className="selected">{selectedNumber}</h3>
-    <Rectangle selectedNumber={selectedNumber} />
+   
     </Modal.Footer>
   </Modal>
      
