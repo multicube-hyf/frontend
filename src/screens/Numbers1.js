@@ -7,8 +7,9 @@ import Header from "../components/Header";
 function Exercise1({ history }) {
   return (
     <div className="exerciseScreen">
+    <div className="pages-title">Select Cubes</div>
     <Header/>
-      <NumbersExercise history={history} numToFind={2} />
+     <NumbersExercise history={history} numToFind={2} />
       <Footer history={history} />
     </div>
   );
