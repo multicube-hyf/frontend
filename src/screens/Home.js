@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import background from '../assets/images/logoXL.png';
+import GetStarted from '../components/help/GetStarted';
 
 
 function Home() {
@@ -16,8 +17,8 @@ function Home() {
 			<h1>
 				<Link to='/signin'>Sign-in</Link>
 			</h1>
-			<Link  to='/numbers1'>
-				<Button variant="danger" className="get-started">Get Started!</Button>
+			<Link className="get-started" to='/numbers1'>
+				<GetStarted/>
 			</Link>
 			
 		</div>

@@ -4,12 +4,10 @@ import NumberContext from '../../numberContext/NumberContext';
 import Matrix from '../matrix/Matrix';
 import Rectangle from '../rectangle/Rectangle';
 import Star from '../star/Star';
-import {Row, Col } from "react-bootstrap";
+
 
 import './additionsExercise.css';
 
-import ArrowForwardSharpIcon from '@material-ui/icons/ArrowForwardSharp';
-import { Fab } from '@material-ui/core';
 
 function AdditionExercise({ number1, number2, history }) {
 	const {
@@ -46,11 +44,6 @@ function AdditionExercise({ number1, number2, history }) {
 		}
 	}, [isCompleted]);
 
-	const handleNext = () => {
-		history.push(`/addition2`);
-		let updateCompleted = completedExercises + 1;
-		setCompletedExercises(updateCompleted);
-	};
 
 	return (
 		<div>
@@ -74,16 +67,7 @@ function AdditionExercise({ number1, number2, history }) {
 
 					<p className='star-number'>{sum}</p>
 					<p className='super'>Super!</p>
-					<div className='next-btn'>
-						<Fab color='secondary' aria-label='edit'>
-							<button
-								className='btn btn-link'
-								onClick={handleNext}
-							>
-								<ArrowForwardSharpIcon />
-							</button>
-						</Fab>
-					</div>
+					
 				</div>
 			)}
 		</div>
